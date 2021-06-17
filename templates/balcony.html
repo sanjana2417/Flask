@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>blogs</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <title>Balcony Interior Decor
+    </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/balcony.css') }}">
+
+
+</head>
+
+<body>
+    <nav class="shift">
+
+        <ul>
+            <li class="top">Go Decor</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/userblogs">User Blogs</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header><br>You can turn even the tiniest of balconies into an enchanting garden. Use a variety of potted plants and
+        planter boxes on the floor as well as in hanging pots, and utilise every
+        inch of available space to turn your balcony into a green outdoor basis. <br> </header>
+
+    <section class="first">
+        <h3>Terrace Garden With Pergolas
+        </h3>
+        <!-- <img src="/static/img/bedroom_main" alt="bedroom_design"> -->
+        <img src="{{url_for('static', filename='img/balcony_design')}}" alt="balcony_design">
+        <span> Anyone who has a rooftop terrace, or even a larger balcony,
+            should definitely go all out to create a charming private garden
+            like this one. The icing on the cake must be the wooden pergolas
+            which filter the light and create interesting patterns of shadows
+            on the floor.
+            What a lovely spot to relax, chat and enjoy your day!</span>
+    </section>
+    <section class="second">
+        <h3>Create A Reading Nook In Your Balcony
+        </h3>
+        <img src="{{url_for('static', filename='img/balcony_table')}}" alt="balcony_design">
+        <span> A comfy chair and a small side table (or ledge if you don’t have enough space for a table), can turn your
+            balcony into your most favourite spot in the house. You can enjoy the views, curl up with your cuppa, read,
+            write, medi
+            Don’t forget a warm throw to keep you comfortable if you doze off while reading.</span>
+    </section>
+    <section class="third">
+        <h3>Gallery Design With Vertical Garden
+        </h3>
+        <img src="{{url_for('static', filename='img/balcony_vertical')}}" alt="balcony_design">
+        <span>Short on space? A vertical garden could be just the right thing to make your area look green. Add shelves
+            or a grill where you can hang small potted plants. You can consider a simple drip watering system to water
+            the plants so that the wall does not get wet. Remember, you could choose to grow some herbs which you can
+            use in your cooking.
+            Try fertilising your plants with kitchen compost; organic is the way to go. </span>
+    </section>
+    <section class="fourth">
+        <h3>Wooden Deck
+        </h3>
+        <img src="{{url_for('static', filename='img/balcony_wooden')}}" alt="balcony_design">
+        <span> With this gallery designs, You could use external quality wooden deck tiles to create a lovely deck on
+            your balcony. Sit back and enjoy the breeze! </span>
+    </section>
+    <section class="fifth">
+        <h3>Soak In A Hot Tub
+        </h3>
+        <img src="{{url_for('static', filename='img/balcony_hotub')}}" alt="balcony_design">
+        <span>This idea may not be for everyone, especially if your home doesn’t have the kind of privacy required for
+            an outdoor tub. But if you can swing it, the idea of soaking in a hot tub while overlooking a gorgeous view
+            like this is one you shouldn’t pass up. </span>
+    </section><br>
+
+
+    <div class="share-button-container">
+        <a href="" class="facebook-btn">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="" class="twitter-btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="pinterest-btn">
+            <i class="fab fa-pinterest"></i>
+        </a>
+
+        <a href="" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="" class="linkedin-btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    <script src="{{url_for('static', filename='styles/search.js')}}"></script>
+    {% extends "footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:0;
+    box-sizing:0;
+}
+ 
+html{
+    background-color: #fff;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    width: 90%;
+    margin: 20px ;
+    background: #fff;
+    padding: 5px ;
+    box-shadow: 5px 5px 0px #dedede;
+  }
+  .top{
+    text-align: center;
+     margin-left:50px;
+      font-family: 'Lobster', cursive;
+      font-size:2rem;
+	color:#0066cc;
+	text-shadow: 2px 3px #0d0d0d;
+	animation: blink 1s linear infinite;
+     
+  }
+  nav ul {
+    list-style: none;
+   
+}
+  nav ul li {
+    display: inline-block;
+   
+  }
+  @keyframes blink{
+	50%{opacity:.4;}
+	80%{opacity:.9;}}
+
+ 
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-size:22px;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+  nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+  }
+  nav.shift ul li a:hover {
+    color: white;
+  }
+  nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #66b3ff;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+.blog span{
+    background-color:white;
+   color:#005c99;
+   border-radius:50px;
+   display: inline-block;
+    box-shadow: 5px 10px 20px #afafaf;
+    padding: 10px 25px;
+   font-size: 35px;
+   position: absolute;
+   top: 150px;
+   left: 40%;
+}
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom:50px;
+  position: relative;
+      top: 150px;
+  
+  }
+  
+  #myUL li  {
+   /* Add a border to all links */
+    margin-top: 30px; /* Prevent double borders */
+    background-color: white; /* Grey background color */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: #1B3D6C; /* Add a black text color */
+    display: block; 
+    border-radius:20px;/* Make it into a block element to fill the whole list */
+    box-shadow: 5px 10px 20px #afafaf;
+    text-align: justify;
+    margin-left:200px;
+    margin-right:200px;
+    margin-bottom:80px;
+  
+  }
+  #myUL li a{
+      text-decoration:none;
+  }
+  
+  h3,p{
+      
+      font-size:35px;
+      text-align: center;
+      color:#003d66;
+  
+  }
+  button.like{
+    width: 30px;
+    height: 35px;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 60%;
+    color: rgba(0,150,136 ,1);
+    background-color:rgba(38,166,154 ,0.3);
+    border-color: rgba(0,150,136 ,1);
+    border-width: 1px;
+    font-size: 15px;
+    
+  }
+  
+  button.dislike{
+    width: 30px;
+    height: 35px;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 60%;
+    color: rgba(255,82,82 ,1);
+    background-color: rgba(255,138,128 ,0.3);
+    border-color: rgba(255,82,82 ,1);
+    border-width: 1px;
+    font-size: 15px;
+  }
+  .name{
+   margin-left:700px;
+  }
+  .button1{
+    width: 40px;
+    height: 40px;
+    font-size:28px;
+    color: black;
+    text-align:center;
+    line-height:30px;
+    border-radius: 40px;
+  }
+  .button1 :hover{
+    
+    cursor: pointer;
+    cursor: hand;
+  }
+  .button2{
+    width: 40px;
+    height: 40px;
+    font-size:28px;
+    color: black;
+    text-align:center;
+    line-height:30px;
+    border-radius: 40px;
+  }
+  .button2 :hover{
+    
+    cursor: pointer;
+    cursor: hand;
+  }

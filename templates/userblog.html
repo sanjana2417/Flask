@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/userblog.css') }}">
+  <title>User Blogs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <nav class="shift">
+
+    <ul>
+      <li class="top">Go Decor</li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blogs">Blogs</a></li>
+      <li><a href="/aboutus">About Us</a></li>
+      <li><a href="/contactus">Contact Us</a></li>
+
+    </ul>
+  </nav><br><br>
+  <div class="blog">
+    <span><strong>USERBLOGs</strong></span>
+  </div>
+  {% for x in lis %}
+  <ul id="myUL">
+    <li>
+
+      <h3>{{x[0]}}</h3><br>
+      <p>{{x[1]}}</p>
+      <button class="button1" onclick="like()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+      <button class="button2" onclick="dislike()"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></button>
+      <script>
+       
+        var color1 = document.getElementsByClassName('button1')[0];
+        var color2 = document.getElementsByClassName('button2')[0];
+        function like() {
+        color1.style.backgroundColor = color1.style.backgroundColor === 'green' ? 'white': 'green';
+        color2.style.backgroundColor = 'white';
+        color1.style.color = color1.style.backgroundColor === 'white' ? 'black': 'white';
+        color2.style.color = 'black';
+}
+
+        function dislike() {
+        color1.style.backgroundColor = 'white';
+        color2.style.backgroundColor = color2.style.backgroundColor === 'red' ? 'white' : 'red';
+        color1.style.color = 'black';
+        color2.style.color = color2.style.color === 'white' ? 'black': 'white';
+        
+      }
+      </script>
+      
+
+      <br><span class="name">~{{x[2]}}</span>
+    </li>
+  </ul>
+  {% endfor %}
+  <div>
+    <br><br><br><br><br><br><br><br>
+    {% extends "footer.html" %}
+  </div>
+</body>
+
+</html>

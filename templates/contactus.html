@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/contactus.css') }}">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <nav class="shift">
+
+        <ul>
+            <li class="top">Go Decor</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/userblogs">User Blogs</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Design Cafe Experience Centre, Whitefield</h1>
+        <h5>3rd Floor, Ascendas Park Square Mall,<br>
+            ITPL Main Rd, Whitefield Main Road,<br>
+            Bengaluru, Karnataka 560066<br><br>
+            
+            Landmark: Ascendas Park Square Mall</h5>
+        <h6>Phone: 080-68065000</h6>
+    </div>
+    <div class="box">
+    <form method="POST" action="/contactus">
+        <label id="fname" for="fname"  class="fname">First Name:<input name="fname" type="text"></label>
+        <br><label  for="lname" id="lname" >Last Name:<input name="lname" type="text"></label><br>
+        <label  for="cmnt" id="cmnt">What would you like to tell about our blogs?<br><textarea  name="cmnt"></textarea></label>
+        <br><label  for="suggestn" id="suggestn" >Your suggestions(if any)<br><textarea name="suggestn"></textarea></label>
+        <br><label>We value your feedback</label>
+        <br><button id="done" class="button1">Submit</button>
+    </form>
+</div>
+    <div class="main">
+   </div>        
+    
+        
+   
+   <div>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    {% extends "footer.html" %}
+  </div>
+
+
+</html>

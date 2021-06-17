@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  
+  <title>createblog</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/createblog.css') }}">
+</head>
+
+<body>
+  <nav class="shift">
+
+    <ul>
+      <li class="top">Go Decor</li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blogs">Blogs</a></li>
+      <li><a href="/aboutus">About Us</a></li>
+      <li><a href="/userblogs">User Blogs</a></li>
+      <li><a href="/contactus">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="container"> 
+    <span><b>Enter Title:</b> <input type="text" id="blogtitle"></span><br><br>
+    <span><b>Enter content: </b><br><textarea name="" id="content" cols="30" rows="10"></textarea></span><br><br>
+    <span><input type="text" id="uname" placeholder="enter your name"></span><br><br>
+    <button id="submit" class="button1">Submit</button>
+  </div>
+
+
+</body>
+<footer>
+  <script src="{{url_for('static', filename='../static/styles/submit.js')}}"></script>
+  
+
+</footer>
+
+</html>
